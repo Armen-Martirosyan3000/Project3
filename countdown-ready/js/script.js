@@ -60,7 +60,7 @@ function startTime() {
 	s = checkTime(s);
 	document.getElementById('txt').innerHTML = h + ":" + m + ":" + s;
 	setTimeout(startTime, 1000);
-	document.getElementById('txt').style.fontSize = "280%";
+	document.getElementById('txt').style.fontSize = "320%";
 	document.getElementById('txt').style.color = "#0000DE";
 }
 
@@ -68,5 +68,3 @@ function checkTime(i) {
 	if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10--< 10 թվերի դիմաց ավելացրեք զրո
 	return i;
 }
-
-
