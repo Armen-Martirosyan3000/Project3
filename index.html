@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="./countdown-ready/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <!--taymer font-taymer-ի տառատեսակ-->
+</head>
+
+<body onload="startTime()">
+    <!--onload="startTime()"-ն body-իի ֆունկցիա է, որը ապահովում է այն երբ էկրանը բացենք ժամացույցը երևա էկրանին ու աշխատի-->
+
+    <!-- countdown-wrapper-հետհաշվարկ-փաթեթ -->
+    <div class="countdown-wrapper">
+        <h1 class="title">New Year's Left</h1>
+        <!--հետևի ֆոնի հաջորդ տարվա տարեթիվ՝ 2023-->
+        <div id="year" class="year"></div>
+        <div class="countdown" id=countdown>
+            <div class="time">
+                <h2 id="days">00</h2>
+                <small>Days</small>
+            </div>
+            <div class="time">
+                <h2 id="hours">00</h2>
+                <!--Սահմանում է ավելի փոքր տեքստ:-->
+                <small>Hours</small>
+            </div>
+            <div class="time">
+                <h2 id="minutes">00</h2>
+                <small>Minutes</small>
+            </div>
+            <div class="time">
+                <h2 id="seconds">00</h2>
+                <small>Seconds</small>
+            </div>
+        </div>
+        <!--reloader-->
+        <div class="preloader" id="preloader">
+            <div class="lds-ripple">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!--clock-ժամացույց-->
+
+    <h2 class="clock">Relq Clock</h2>
+
+    <div id="txt">
+    </div>
+
+    <script src="./countdown-ready/js/script.js"></script>
+</body>
+
+</html>
